@@ -9,13 +9,13 @@ import math
 import torch
 import torch.nn as nn
 
-# from src.models.utils.modules import Block, CrossAttention, CrossAttentionBlock
-# from src.utils.tensors import trunc_normal_
+from src.models.utils.modules import Block, CrossAttention, CrossAttentionBlock
+from src.utils.tensors import trunc_normal_
 # from .utils.modules import Block, CrossAttention, CrossAttentionBlock
 # from ..utils.tensors import trunc_normal_
 
-from models.utils.modules import Block, CrossAttention, CrossAttentionBlock
-from utils.tensors import trunc_normal_
+# from models.utils.modules import Block, CrossAttention, CrossAttentionBlock
+# from utils.tensors import trunc_normal_
 
 
 class AttentivePooler(nn.Module):
