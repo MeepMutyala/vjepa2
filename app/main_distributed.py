@@ -15,7 +15,7 @@ import submitit
 import yaml
 
 from app.scaffold import main as app_main
-from src.utils.logging import get_logger, git_information
+from vjepa2.utils.logging import get_logger, git_information
 
 logger = get_logger(force=True)
 

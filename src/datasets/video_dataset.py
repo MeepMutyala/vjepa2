@@ -15,8 +15,8 @@ import torch
 import torchvision
 from decord import VideoReader, cpu
 
-from src.datasets.utils.dataloader import ConcatIndices, MonitoredDataset, NondeterministicDataLoader
-from src.datasets.utils.weighted_sampler import DistributedWeightedSampler
+from vjepa2.datasets.utils.dataloader import ConcatIndices, MonitoredDataset, NondeterministicDataLoader
+from vjepa2.datasets.utils.weighted_sampler import DistributedWeightedSampler
 
 _GLOBAL_SEED = 0
 logger = getLogger()

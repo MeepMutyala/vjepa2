@@ -14,8 +14,8 @@ import torch.nn as nn
 # from .utils.modules import Block, CrossAttention, CrossAttentionBlock
 # from ..utils.tensors import trunc_normal_
 
-from models.utils.modules import Block, CrossAttention, CrossAttentionBlock
-from utils.tensors import trunc_normal_
+from vjepa2.models.utils.modules import Block, CrossAttention, CrossAttentionBlock
+from vjepa2.utils.tensors import trunc_normal_
 
 
 class AttentivePooler(nn.Module):

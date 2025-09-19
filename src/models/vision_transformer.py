@@ -21,11 +21,11 @@ import torch.nn as nn
 # from .utils.pos_embs import get_2d_sincos_pos_embed, get_3d_sincos_pos_embed
 # from ..utils.tensors import trunc_normal_
 
-from masks.utils import apply_masks
-from models.utils.modules import Block
-from models.utils.patch_embed import PatchEmbed, PatchEmbed3D
-from models.utils.pos_embs import get_2d_sincos_pos_embed, get_3d_sincos_pos_embed
-from utils.tensors import trunc_normal_
+from vjepa2.masks.utils import apply_masks
+from vjepa2.models.utils.modules import Block
+from vjepa2.models.utils.patch_embed import PatchEmbed, PatchEmbed3D
+from vjepa2.models.utils.pos_embs import get_2d_sincos_pos_embed, get_3d_sincos_pos_embed
+from vjepa2.utils.tensors import trunc_normal_
 
 
 class VisionTransformer(nn.Module):

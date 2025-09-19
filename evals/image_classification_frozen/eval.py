@@ -27,12 +27,12 @@ from timm.data import create_transform as timm_make_transforms
 from torch.nn.parallel import DistributedDataParallel
 
 from evals.image_classification_frozen.models import init_module
-from src.datasets.data_manager import init_data
-from src.models.attentive_pooler import AttentiveClassifier
-from src.models.utils.modules import Block, CrossAttentionBlock
-from src.utils.checkpoint_loader import robust_checkpoint_loader
-from src.utils.distributed import AllReduce, init_distributed
-from src.utils.logging import AverageMeter, CSVLogger
+from vjepa2.datasets.data_manager import init_data
+from vjepa2.models.attentive_pooler import AttentiveClassifier
+from vjepa2.models.utils.modules import Block, CrossAttentionBlock
+from vjepa2.utils.checkpoint_loader import robust_checkpoint_loader
+from vjepa2.utils.distributed import AllReduce, init_distributed
+from vjepa2.utils.logging import AverageMeter, CSVLogger
 
 logging.basicConfig()
 logger = logging.getLogger()

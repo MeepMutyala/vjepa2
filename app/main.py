@@ -11,7 +11,7 @@ from pathlib import Path
 import yaml
 
 from app.scaffold import main as app_main
-from src.utils.distributed import init_distributed
+from vjepa2.utils.distributed import init_distributed
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--fname", type=str, help="name of config file to load", default="configs.yaml")
@@ -39,7 +39,7 @@ def process_main(rank, fname, world_size, devices):
 
     import logging
 
-    from src.utils.logging import get_logger
+from vjepa2.utils.logging import get_logger
 
     logger = get_logger(force=True)
     if rank == 0:

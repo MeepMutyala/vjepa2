@@ -11,7 +11,7 @@ import pprint
 import yaml
 
 from evals.scaffold import main as eval_main
-from src.utils.distributed import init_distributed
+from vjepa2.utils.distributed import init_distributed
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--val_only", action="store_true", help="only run eval", default=False)

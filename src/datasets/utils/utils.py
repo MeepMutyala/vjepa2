@@ -3,8 +3,14 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-from src.utils.cluster import dataset_paths
-from src.utils.logging import get_logger
+try:
+    from vjepa2.utils.cluster import dataset_paths
+except Exception:
+    def dataset_paths():
+        raise ImportError(
+            "vjepa2.utils.cluster.dataset_paths not found. Provide dataset paths via config/environment."
+        )
+from vjepa2.utils.logging import get_logger
 
 logger = get_logger("Datasets utils")
 

@@ -4,7 +4,7 @@
 # LICENSE file in the root directory of this source tree.
 
 from evals.hub.preprocessor import vjepa2_preprocessor
-from src.hub.backbones import (
+from vjepa2.hub.backbones import (
     vjepa2_ac_vit_giant,
     vjepa2_vit_giant,
     vjepa2_vit_giant_384,

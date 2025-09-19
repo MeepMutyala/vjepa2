@@ -10,7 +10,7 @@ import numpy as np
 import torch
 from torch.utils.data import DistributedSampler, RandomSampler
 
-from src.utils.logging import get_logger
+from vjepa2.utils.logging import get_logger
 
 logger = get_logger("WeightedSampler")
 
